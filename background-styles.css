@@ -1,0 +1,298 @@
+#background-stars {
+    position:fixed; /* stars are moving along with the screeen now*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    z-index: -10;
+    background-attachment:fixed;
+}
+
+.shooting-stars{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+    animation: starfall 3s linear infinite;
+}
+
+.shooting-stars::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes starfall {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 0.3;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1200px);
+        opacity: 0;
+    }
+}
+
+.shooting-stars:nth-child(1){
+    top: 0px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.shooting-stars:nth-child(2){
+    top: 0px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.shooting-stars:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.shooting-stars:nth-child(4){
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.shooting-stars:nth-child(5){
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+.shooting-stars:nth-child(6){
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.shooting-stars:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.shooting-stars:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.shooting-stars:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.shooting-stars:nth-child(10){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+.shooting-stars:nth-child(11){
+    top: 500px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+.shooting-stars:nth-child(12){
+    top: 0px;
+    right: 1200px;
+    left: initial;
+    animation-delay: 1.6s;
+    animation-duration: 4s;
+}
+.shooting-stars:nth-child(13){
+    top: 0px;
+    right: 800px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3.6s;
+}
+.shooting-stars:nth-child(14){
+    top: 700px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 4.2s;
+}
+.shooting-stars:nth-child(15){
+    top: 0px;
+    right: 1400px;
+    left: initial;
+    animation-delay: 1.75s;
+    animation-duration: 3.4s;
+}
+
+
+/* ===== STATIONARY STARS ===== */
+.stationary-stars{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+    animation: sparkle 3s infinite;
+}
+
+@keyframes sparkle {
+    0%
+    {
+        transform: rotate(0deg) ;
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0.3;
+    }
+    100%
+    {
+        transform: rotate(360deg) ;
+        opacity: 1;
+    }
+}
+
+.stationary-stars:nth-child(16){
+    top: 200px;
+    right: 150px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+.stationary-stars:nth-child(17){
+    top: 450px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.stationary-stars:nth-child(18){
+    top: 150px;
+    right: 1500px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.stationary-stars:nth-child(19){
+    top: 600px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.stationary-stars:nth-child(20){
+    top: 750px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+.stationary-stars:nth-child(21){
+    top: 400px;
+    right: 750px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.stationary-stars:nth-child(22){
+    top: 350px;
+    right: 1250px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.stationary-stars:nth-child(23){
+    top: 100px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.stationary-stars:nth-child(24){
+    top: 450px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.stationary-stars:nth-child(25){
+    top: 250px;
+    right: 400px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+.stationary-stars:nth-child(26){
+    top: 500px;
+    right: 500px;
+    left: initial;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+.stationary-stars:nth-child(27){
+    top: 750px;
+    right: 1200px;
+    left: initial;
+    animation-delay: 1.6s;
+    animation-duration: 4s;
+}
+.stationary-stars:nth-child(28){
+    top: 150px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 1.55s;
+    animation-duration: 3.6s;
+}
+.stationary-stars:nth-child(29){
+    top: 700px;
+    right: 800px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 4.2s;
+}
+.stationary-stars:nth-child(30){
+    top: 600px;
+    right: 1400px;
+    left: initial;
+    animation-delay: 1.75s;
+    animation-duration: 3.4s;
+}

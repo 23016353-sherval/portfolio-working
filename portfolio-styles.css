@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #190e34;
+    color: #fff;
+    min-height: 110vh;
+}
+.instructions p {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+section a {
+    text-decoration: none;
+}
+
+/* ===== NAVBAR =====
+.header {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100;
+    padding: 10px 50px;
+    background-color: #13082f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    opacity: 100%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 24px;
+    color: white;
+    opacity: 100%;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    
+    
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+    
+}
+
+.navbar a:hover::before {
+    width: 100%;
+} */
+
+/* ===== ALL PROJECTS ===== */
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-projects-container{
+    height:400px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin: 1rem auto 3rem;
+}
+
+.card {
+    width: 80px;
+    height: 400px;
+    /* min-height: 500px; Set minimum height for a taller card */
+    border-radius: 2rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    /* flex-direction: column; Ensures content stacks vertically */
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.card > .row{
+    color:white;
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: #36106b;
+}
+
+.card > .row >.icon {
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #fff;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./images/typo-final.png');
+    background-position: left center;
+}
+.card[for="c2"] {
+    background-image: url('./images/logo-design-coverpage.png');
+    background-position: left bottom;
+}
+.card[for="c3"] {
+    background-image: url('./images/menu-mainpage.png');
+    background-position: left bottom;
+}
+.card[for="c4"] {
+    background-image: url('./images/Space Background-01.png');
+    background-position: left center;
+}
+
+
+/* aligning background images:
+    background-position: left center;
+    left -- horizontal alignment
+    center -- vertical alignment
+*/
