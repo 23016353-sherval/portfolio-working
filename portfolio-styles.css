@@ -17,6 +17,15 @@ body {
 
 section a {
     text-decoration: none;
+    color: #fff;
+    /* background-color:blue; */
+    padding: 15px 22px;
+    border-radius: 30px;
+}
+
+.icon a:hover {
+    color:blue;
+    transition: 0.5s
 }
 
 /* ===== NAVBAR =====
@@ -174,7 +183,15 @@ input:checked + label .description {
     background-position: left bottom;
 }
 .card[for="c4"] {
-    background-image: url('./images/Space Background-01.png');
+    background-image: url('./images/Font-creation-cover.png');
+    background-position: left center;
+}
+.card[for="c5"] {
+    background-image: url('./images/char-cata-\ SH.png');
+    background-position: left center;
+}
+.card[for="c6"] {
+    background-image: url('./images/Project\ Style\ Shop\ Wireframe.png');
     background-position: left center;
 }
 
