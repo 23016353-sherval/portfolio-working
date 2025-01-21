@@ -16,6 +16,7 @@
     width: 100%;
     text-align: center;
     transform: translateY(-50%);
+    font-size: 18px;
 }
 
 .pagination a{
