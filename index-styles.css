@@ -294,6 +294,7 @@ body {
     background-color: aqua;
     border-radius: 10%;
     /* margin: 0 auto; */
+    /* background-position: center; */
 }
 .portfolio-card-img img {
     position: absolute;
@@ -303,7 +304,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    /* background-position: center; */
     /* background-color: #1e9bff; */
+    
     margin: 0 auto;
 }
 .portfolio-card-body {

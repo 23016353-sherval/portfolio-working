@@ -171,27 +171,35 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./images/typo-final.png');
+    background-image: url('./images/Project\ Style\ Shop\ Wireframe.png');
     background-position: left center;
 }
 .card[for="c2"] {
-    background-image: url('./images/logo-design-coverpage.png');
+    background-image: url('./images/EnchantingElixir-cover.png');
     background-position: left bottom;
 }
 .card[for="c3"] {
-    background-image: url('./images/menu-mainpage.png');
+    background-image: url('./images/typo-final.png');
     background-position: left bottom;
 }
 .card[for="c4"] {
-    background-image: url('./images/Font-creation-cover.png');
+    background-image: url('./images/logo-design-coverpage.png');
     background-position: left center;
 }
 .card[for="c5"] {
-    background-image: url('./images/char-cata-\ SH.png');
+    background-image: url('./images/Font-creation-cover.png');
     background-position: left center;
 }
 .card[for="c6"] {
-    background-image: url('./images/Project\ Style\ Shop\ Wireframe.png');
+    background-image: url('./images/menu-mainpage.png');
+    background-position: left center;
+}
+.card[for="c7"] {
+    background-image: url('./images/char-cata-\ SH.png');
+    background-position: left center;
+}
+.card[for="c8"] {
+    background-image: url('./images/Skating_Hallucination_cover.jpg');
     background-position: left center;
 }
 
