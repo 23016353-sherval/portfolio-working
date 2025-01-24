@@ -171,7 +171,7 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./images/Project\ Style\ Shop\ Wireframe.png');
+    background-image: url('./images/project-styleshop-wireframe.png');
     background-position: left center;
 }
 .card[for="c2"] {
@@ -187,7 +187,7 @@ input:checked + label .description {
     background-position: left center;
 }
 .card[for="c5"] {
-    background-image: url('./images/Font-creation-cover.png');
+    background-image: url('./images/Font-creation-cover-pic.png');
     background-position: left center;
 }
 .card[for="c6"] {
