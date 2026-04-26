@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Year Project</title>
+    <link rel="stylesheet" href="./index-styles.css">
+    <link rel="stylesheet" href="./background-styles.css">
+    <link rel="stylesheet" href="./VR-escape-room-styles.css">
+    <link rel="stylesheet" href="./pagination-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    
+</head>
+<body>
+    <!-- ===== HEADER/NAVBAR ===== -->
+    <header class="header">
+        <div>
+            <a href="./index.html">
+                <img src="./images/No background logo.png"
+                style="height:100px; width:auto; margin:0; padding:0;">
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#about-section">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+    <!-- ===== SHOWCASE TITLE ===== -->
+    <section id="showcase-section">
+        <h1 class="title" style="max-width: 570px;"> VR ESCAPE ROOM </h1>
+    <!-- ===== SHOWCASE ===== -->
+        <div class="showcase-container">
+            <div class="intro">
+                <div class="intro-text">
+                    <h2>~~INTRODUCTION~~</h2>
+                    <h4>
+                        This project is a VR escape room game that I developed during one of my modules and it was the first 
+                        time I ever developed a game. The game was created in the Unity engine in the C# lanaguage. We were 
+                        tasked with creating a VR escape room, we could create whatever we wanted with whatever theme we wanted 
+                        as long as it was within the requirements.
+                    </h4>
+                </div>
+                <!-- <div class="intro-pic">
+                    <img src="/public/images/design typography draft.jpg">
+                </div> -->
+            </div>
+            <div class="body">
+                <div class="body-text">
+                    <h2>~~INSPIRATION~~</h2>
+                    <h4>
+                        For the puzzle, I got the inspirationfrom my favourite series 'How To Train Your Dragon: Race To The Edge'. 
+                        In the series there is an object called the Dragon Eye which shows you a different projection based on the 
+                        lens you put in and the type of dragon fire that is shining through the Dragon Eye, they slowly find all 
+                        the lenses and dragons for their fire until they finally reach the last dragon they need to protect from 
+                        the villains. I thought this was a really cool concept and I wanted to create a similar puzzle in my game.
+                        
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        For the design of the escape room, since I already had that idea for the puzzle I just decided to make it a 
+                        How To Train Your Dragon themed escape room, to fit the puzzle nicely.
+                    </h4>
+                </div>
+                <div class="body-pic-3">
+                    <div class="final-pic-container">
+                        <div class="body-pic-2" style="width: 100%;">
+                            <img src="./images/Inspo-pic-puzzle.png">
+                            <p>Projection from Dragon Eye using Toothless's Purple Dragon Fire</p>
+                        </div>
+                    </div>
+                    <div class="final-pic-container">
+                        <div class="body-pic-2" style="width: 30%;">
+                            <img src="./images/Inspo-pic-room-1.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 36%;">
+                            <img src="./images/Inspo-pic-room-2.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 33%;">
+                            <img src="./images/Inspo-pic-room-3.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 40%;">
+                            <img src="./images/Inspo-pic-room-4.png">
+                        </div>
+                    </div>
+                    <div style="display: flex; padding: 0px 3px 5px 7px; justify-content: space-between;">
+                        <p>First 2 show Viking theme, last 2 inspired the layout for the escape room</p>
+                    </div>
+                </div>
+                <div class="body-text">
+                    <h2>~~CORE MECHANICS~~</h2>
+                    <h4>
+                        For the core mechanics, for the puzzles, players can click on levers to open doors and solve 
+                        puzzles, they can also pick up and move objects around the room to compile their information 
+                        and make it easier to solve the puzzles. For the movement in the escape room, there are 
+                        teleporter pads at key areas that players use to move around the map, some of the teleporter 
+                        pad locations might even be hints for the player that something is there.
+                    </h4>
+                </div>
+                <div class="body-pic-container">
+                    <div class="body-pic-2" style="width: 50%;">
+                        <img src="./images/TP-points.png">
+                        <p>Teleporter pads around the room</p>
+                    </div>
+                    <div class="body-pic-2" style="width: 50%;">
+                        <img src="./images/picking-up-gem.png">
+                        <p>Objects can be picked up and moved around</p>
+                    </div>
+                </div>
+                <div class="body-text">
+                    <h2 style="margin-bottom: 1rem;">~~PUZZLE DESIGN~~</h2>
+                    <h4>
+                        For the main puzzle, I tried to do something similar to the Dragon Eye puzzle I mentioned above, 
+                        There weren't any assets that looked Similar to the Dragon Eye so I used a Dragon Statue instead. 
+                        The puzzle starts with instructions in a riddle that tells you what to do but the instructions are 
+                        simple, see the colour of the projection then find the gem with the same colour, once you find the 
+                        gem, you have to pull the lever with the same shape as the gem. Once all the levers are pulled, the 
+                        projection turns white and the cheat in the room is unlocked.
+                    </h4>
+                    <p class="spacer"></p>
+                    <div class="body-pic-3">
+                        <div class="final-pic-container">
+                            <div class="body-pic-2" style="width: 55%;">
+                                <img src="./images/Puzzle-mech-1.png">
+                            </div>
+                            <div class="body-pic-2" style="width: 45%;">
+                                <img src="./images/Puzzle-mech-2.png">
+                            </div>
+                        </div>
+                        <div style="display: flex; padding: 3px 3px 5px 5px; justify-content: space-between;">
+                            <p>Projection is blue, blue gem is a star</p>
+                            <p>Pull the star shaped lever</p>
+                        </div>
+                        <div class="final-pic-container">
+                            <div class="body-pic-2" style="width: 47%;">
+                                <img src="./images/Puzzle-mech-3.png">
+                            </div>
+                            <div class="body-pic-2" style="width: 53%;">
+                                <img src="./images/Puzzle-mech-4.png">
+                            </div>
+                        </div>
+                        <div style="display: flex; padding: 3px 3px 5px 5px; justify-content: space-between;">
+                            <p>Projection becomes white</p>
+                            <p>Puzzle completed, chest unlocked</p>
+                        </div>
+                    </div>
+                <div class="body-text">
+                    <h4>
+                        For the last puzzle, there are 6 levers on the wall and you need to pull them in the correct order 
+                        for the door to open, there is a clue sheet that has questions with numbered answers, and the answers 
+                        can be found around the entire room, some should be easy since they would have ran around the room 
+                        to look for gems earlier. Once all the questions are answered that will be the order you have to pull 
+                        the levers to open the last door and escape the room.
+                    </h4>
+                    <p class="spacer"></p>  
+                </div>
+                <div class="body-pic-3" style="width: 75%;">
+                    <img src="./images/Last-Puzzle.png">
+                </div>
+                <div class="body-text">
+                    <h4>
+                        I think the best parts I liked about this project for the puzzles would be the main puzzle, I was 
+                        able to create a puzzle that kind of resembles the one that I got the inspiration from. For the escape 
+                        room itself, I am very proud of this entire house that the escape room takes place in because I created the 
+                        room from scratch since there weren't any houses that fit the layout I had in mind, so for the first time 
+                        using Unity and coding a game, I'm very proud of the work that I've done.
+                    </h4>
+                    <p class="spacer"></p>
+                    <h2>~~GAMEPLAY DEMO~~</h2>
+                    <h4>
+                        This is a gameplay demo of the game that will show the main mechanics of the game and how the puzzles work, 
+                        (The video is recorded on the XR Simulator in Unity which simulates using VR on a computer as my original 
+                        video on the VR Headset got corrupted)
+                    </h4>
+                    <p class="spacer"></p>
+                    <div class="body-pic" style="width: 100%;">
+                        <video id="myVideo" width="100%" height="auto" style="border-radius: 20px;" controls>
+                            <source src="images/Skating_Hallucination_.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="spacer" style="margin: 3rem;"></p>
+                        <script>
+                            const video = document.getElementById("myVideo");
+                            video.volume = 0.01; // Set default volume
+                        </script>
+                    </div>
+                    <p class="spacer"></p>
+                </div>
+            </div>
+            <div class="closing">
+                <div class="closing-text">
+                    <h2>~~OVERALL~~</h2>
+                    <h4>
+                        Overall this project was very fun and it really opened my eyes into the big wide world of game development, 
+                        I had no prior experience with game development before this project and I was able to create a VR escape 
+                        room that I am really proud of. Making a game can be very tiring but the satisfaction of seeing your game 
+                        come to life and being able to play it is really rewarding and I would love to experience it again. If 
+                        given the chance to make a game again I would love to do it, and hopefully I can do it better than this one.
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- ===== GALLERY ??? ===== -->
+
+    <!-- PAGINATION SECTION -->
+    <section id="pagination-section" style="margin-top:80px;">
+        <div class="pagination" style="font-size: 18px;">
+            <a href="./EnchantingElixirs.html" class="prev"><i class="fas fa-angle-left"></i></a>
+            <a href="./StyleShop.html" class="num">1</a>
+            <a href="./EnchantingElixirs.html" class="num">2</a>
+            <a href="./typography.html" class="num">3</a>
+            <a href="./logo-design-ex.html" class="num">4</a>
+            <a href="./font-creation.html" class="num">5</a>
+            <a href="./menu-web-app.html" class="num">6</a>
+            <a href="./DragonNest-wiki.html" class="num">7</a>
+            <a href="./FYP.html" class="num">8</a>
+            <a href="./VR-escape-room.html" class="num active">9</a>
+            <a href="./2D-animation.html" class="num">10</a>
+            <a href="./logo-design-ex.html" class="next"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <a href="#" class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <!-- ===== CONTACT TITLE ===== -->
+    <section id="contact-section">
+    <!-- ===== CONTACT ===== -->
+        <!-- <div class="contacts">
+            <h2 class="email" style="color: #fff;"> sherng06@gmail.com </h2>
+            <div class="contact-apps">
+                <a href="https://github.com/23016353-sherval" class="find-me">
+                    <img src="./images/GitHub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/sherval-ng-81977729b/" class="find-me">
+                    <img src="./images/linked_in_logo-removebg-preview.png" alt="LinkedIn">
+                </a>
+                <a href="" class="find-me">
+                    <img src="/public/images/0_Huh.png" alt="Resume">
+                </a> 
+            </div>
+        </div> -->
+    </section>
+
+    <!-- ===== SHOOTING STARS ===== -->
+    <section id="background-stars">
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+    </section>
+</body>
+</html>
