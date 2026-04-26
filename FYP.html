@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Year Project</title>
+    <link rel="stylesheet" href="./index-styles.css">
+    <link rel="stylesheet" href="./background-styles.css">
+    <link rel="stylesheet" href="./FYP-styles.css">
+    <link rel="stylesheet" href="./pagination-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    
+</head>
+<body>
+    <!-- ===== HEADER/NAVBAR ===== -->
+    <header class="header">
+        <div>
+            <a href="./index.html">
+                <img src="./images/No background logo.png"
+                style="height:100px; width:auto; margin:0; padding:0;">
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#about-section">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+    <!-- ===== SHOWCASE TITLE ===== -->
+    <section id="showcase-section">
+        <h1 class="title" style="max-width: 650px;"> FINAL YEAR PROJECT </h1>
+    <!-- ===== SHOWCASE ===== -->
+        <div class="showcase-container">
+            <div class="intro">
+                <div class="intro-text">
+                    <h2>~~INTRODUCTION~~</h2>
+                    <h4>
+                        This is my Final Year Project (FYP) called Promptr and for this Project we used REACT for the 
+                        frontend and Firebase for the backend. We chose these 2 systems because firstly, REACT was the 
+                        main thing we were taught so it was easier to apply, second we used firebase because there 
+                        would be some extra points for using systems that we have not learned before. 
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        The objective of the project was to help users (mainly students aged 12-24) improve on their prompt 
+                        engineering skills given the rise of AI. To accomplish this, we decided to make it as a web game 
+                        where you generate an image based on the photograph given to make it easier and more fun for the users 
+                        to use and learn. There are 2 different game modes, first is a single player mode where you can practice 
+                        on your own and the other is a multiplayer mode where you can compete with other players in a lobby.
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        Additionally, this project was one of the few being showcased during the next year's open house 
+                        for propecting students. This project was also selected to be featured on Channel 8 News.
+                    </h4>
+                </div>
+                <!-- <div class="intro-pic">
+                    <img src="/public/images/design typography draft.jpg">
+                </div> -->
+            </div>
+            <div class="body">
+                <div class="body-text">
+                    <h2>~~GAMEPLAY~~</h2>
+                    <h4>
+                        First, let me explain the gameplay, the goal of the game is to write a prompt that will generate an image as 
+                        close to the original photo as possible while trying to bypass our AI image detection. The game starts with 
+                        you being given a random animal photograph taken from an online image bank (Unsplash), after the image generates, one AI will 
+                        compare the 2 images based on how close the images are and another AI will determine whether it looked AI or 
+                        human-made as well as give detailed feedback on which parts made it obvious and one more AI will check how 
+                        close the description of the photograph is to the prompt that was written, each point will give a percentage 
+                        score and the total score will be the average of both scores. 
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        For singleplayer mode, simply called Promptr, You will be given 3 tries daily to practice your 
+                        prompt engineering skills. Once you are satisfied with your score, you can upload your score to a 
+                        live leaderboard either anonymously or by giving a display name, and see how well you did against 
+                        other players.
+                    </h4>
+                </div>
+                <div class="body-pic-container">
+                    <div class="body-pic-2" style="width: 53%;">
+                        <img src="./images/Promptr-Before-Generation.png">
+                    </div>
+                    <div class="body-pic-2" style="width: 47%;">
+                        <img src="./images/Promptr-After-Generation.png">
+                    </div>
+                </div>
+                <div class="body-text">
+                    <h4>
+                        For local multiplayer mode called PromptWars, you create a lobby and people can join with a 
+                        room code, once everyone is in, the host can start the game and everyone will be given the same 
+                        photo. They will all write their own prompts up to 5 tries per round, select their favourite image and submit it, after everyone has submitted their image, 
+                        or the time runs out, it will move on to the next round. Once all the rounds are over, the scores will be 
+                        revealed and the player with the highest score wins. The scores will then be added to a separate 
+                        leaderboard for PromptWars which compares the scores of all the players that have played PromptWars.
+                    </h4>
+                </div>
+                <div class="body-pic-3">
+                    <div class="final-pic-container">
+                        <div class="body-pic-2" style="width: 50%;">
+                            <img src="./images/PromptWars-Main-Page.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 50%;">
+                            <img src="./images/PromptWars-Lobby.png">
+                        </div>
+                    </div>
+                    <div class="final-pic-container">
+                        <div class="body-pic-2" style="width: 50%;">
+                            <img src="./images/PromptWars-Mid-Round.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 50%;">
+                            <img src="./images/PromptWars-Round-End.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="body-text">
+                    <h2 style="margin-bottom: 1rem;">~~DESIGN~~</h2>
+                    <h4>
+                        For the single player mode we went for a more calm and simple design to fit the more relaxed and 
+                        practice nature of the game mode. For PromptWars we went for a more playful design and music to 
+                        fit its competitive and fun nature. We also gave them different colour schemes, with PromptWars 
+                        having a more vibrant colour scheme and Promptr having a more muted colour scheme. To futher 
+                        differentiate the 2 modes, we also gave them different logos, with PromptWars having a more playful 
+                        logo and Promptr having a more simple logo.
+                    </h4>
+                    <p class="spacer"></p>
+                    <div class="body-pic-container">
+                        <div class="body-pic-2" style="width: 66%;">
+                            <img src="./images/Promptr-logo.png">
+                        </div>
+                        <div class="body-pic-2" style="width: 40%;">
+                            <img src="./images/PromptWars-logo.png">
+                        </div>
+                    </div>
+                <div class="body-text">
+                    <h2>~~Development~~</h2>
+                    <h4>
+                        For the Starting images, we decided to use photographs of animals from unsplash because you can go 
+                        into more detail when describing animals like fur or feathers, full body or half body, etc. and 
+                        we thought it was better to use real images rather than AI images as the reference picture.
+                    </h4>
+                    <p class="spacer"></p>  
+                    <h4>
+                        Next are the AI models used for Image Analysis & Feedback, Image Generation, Image Detection and 
+                        Prompt & Image Description Comparison.** 
+                        
+                        For image analysis and feedback we used Gemini-2.0-flash as it was one of the more recent and 
+                        advanced models for this purpose. 
+                        
+                        For image generation we used Gemini-2.0-flash-experimental-image-generation becuase it was a model 
+                        more catered to image generation compared to the regular Gemini-2.0-flash.
+                        
+                        For image detection we used the hugging face model called haywoodsloan as it was a good model for 
+                        detecting whether the images are AI generated or not.
+                        
+                        And the last model for prompt and image description comparison was also a hugging face model called 
+                        MiniLM which give the most accurate results for what we needed.
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        ** --- all the AI models listed above are accurate to my latest knowledge in August 2025. The models 
+                        may have since been updated or changed, but these were the models used at the time of development.
+                    </h4>
+                </div>
+                <!-- <div class="body-pic-2">
+                    <img src="./images/Dragon moodboard.png">
+                </div> -->
+                <div class="body-text">
+                    <h3>ISSUES FACED</h3>
+                    <h4>
+                        As fun as this project was, there were some issues we faced along the way, while we managed to fix 
+                        them in the end, they were still quite a hassle to deal with. Let me list some of the issues we faced 
+                        during development and design.
+                    </h4>
+                    <p class="spacer"></p>
+                    <h4>
+                        API issues, occationally the API would fail to generate images or fail to analyze the images, this was 
+                        quite a problem as it would affect the gameplay and user experience, sometimes it was on the side of 
+                        the API providers so we could not really do much about it, but other times it was due to our own code 
+                        and we had to spend time debugging and fixing the code to make it work properly.
+                        <p class="spacer"></p>
+                        Another issue we had was that we would exceeed the API limits quite easily during testing which made it 
+                        hard to test the game properly, to fix this we made sure that only one person or maximum 2 people were 
+                        testing the game at any time and we would try to test multiple things in one go to make the most out of 
+                        the API calls we had.
+                    </h4>
+                    <p class="spacer"></p>
+                    <div class="body-pic-1">
+                        <div class="final-pic-container">
+                            <img src="./images/Exceeded-Unsplash-Quota.jpg">
+                        </div>
+                        <div class="final-pic-container">
+                            <img src="./images/Unsplash-API-Error.jpg">
+                        </div>
+                    </div>
+                    <p class="spacer"></p>
+                    <h4>
+                        The next issue we had was contridicting AI results. For example, our AI detection result 
+                        had stated that no AI generation was used, however Gemini's analysis stated that AI was 
+                        strongly indicated for the image. Fortunately this was a one time thing and did not happen 
+                        again.
+                    </h4>
+                    <!-- <p class="spacer"></p> -->
+                </div>
+                <div class="body-pic-1"> 
+                    <img src="./images/Contradicting-AI.jpg">
+                </div>
+            </div>
+            <div class="closing">
+                <div class="closing-text">
+                    <h2>~~OVERALL~~</h2>
+                    <h4>Overaall this project was a really fun and rewarding experience, it was a great way to apply 
+                        what we have learned in class and also learn new things along the way. We were able to create 
+                        a game that is not only fun to play but also helps users improve their prompt engineering 
+                        skills which is really satisfying. We also got to showcase our project during the open house 
+                        and on Channel 8 News which was a great experience as well. If I were to do this project again, 
+                        I would probably try to add more features and make the game more polished, but overall I am 
+                        really happy with how it turned out.
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- ===== GALLERY ??? ===== -->
+
+    <!-- PAGINATION SECTION -->
+    <section id="pagination-section" style="margin-top:80px;">
+        <div class="pagination" style="font-size: 18px;">
+            <a href="./EnchantingElixirs.html" class="prev"><i class="fas fa-angle-left"></i></a>
+            <a href="./StyleShop.html" class="num">1</a>
+            <a href="./EnchantingElixirs.html" class="num">2</a>
+            <a href="./typography.html" class="num active">3</a>
+            <a href="./logo-design-ex.html" class="num">4</a>
+            <a href="./font-creation.html" class="num">5</a>
+            <a href="./menu-web-app.html" class="num">6</a>
+            <a href="./DragonNest-wiki.html" class="num">7</a>
+            <a href="./2D-animation.html" class="num">8</a>
+            <a href="./logo-design-ex.html" class="next"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <a href="#" class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <!-- ===== CONTACT TITLE ===== -->
+    <section id="contact-section">
+    <!-- ===== CONTACT ===== -->
+        <!-- <div class="contacts">
+            <h2 class="email" style="color: #fff;"> sherng06@gmail.com </h2>
+            <div class="contact-apps">
+                <a href="https://github.com/23016353-sherval" class="find-me">
+                    <img src="./images/GitHub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/sherval-ng-81977729b/" class="find-me">
+                    <img src="./images/linked_in_logo-removebg-preview.png" alt="LinkedIn">
+                </a>
+                <a href="" class="find-me">
+                    <img src="/public/images/0_Huh.png" alt="Resume">
+                </a> 
+            </div>
+        </div> -->
+    </section>
+
+    <!-- ===== SHOOTING STARS ===== -->
+    <section id="background-stars">
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="shooting-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+        <span class="stationary-stars"></span>
+    </section>
+</body>
+</html>

@@ -199,10 +199,18 @@ input:checked + label .description {
     background-position: left center;
 }
 .card[for="c8"] {
-    background-image: url('./images/Skating_Hallucination_cover.jpg');
+    background-image: url('./images/Promptr\ Cover\ Page.png');
+    background-position: left center;
+}
+.card[for="c9"] {
+    background-image: url('./images/VR-Escape-Room-Cover.jpg');
     background-position: left center;
 }
 
+.card[for="c10"] {
+    background-image: url('./images/Skating_Hallucination_cover.jpg');
+    background-position: left center;
+}
 
 /* aligning background images:
     background-position: left center;
