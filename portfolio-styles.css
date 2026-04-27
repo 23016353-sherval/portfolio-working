@@ -203,7 +203,7 @@ input:checked + label .description {
     background-position: left center;
 }
 .card[for="c9"] {
-    background-image: url('./images/VR-Escape-Room-Cover.jpg');
+    background-image: url('./images/TP-points.png');
     background-position: left center;
 }
 
